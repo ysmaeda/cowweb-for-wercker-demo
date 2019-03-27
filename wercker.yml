@@ -78,7 +78,7 @@ deploy-to-cluster:
         command: create -f $WERCKER_ROOT/kubernetes/cowweb.yaml --namespace=$COWWEB_NAMESPACE
 
     - kubectl:
-        name: get LoadBalancer public IP address
+        name: get LoadBalancer public IP addresss
         server: $KUBERNETES_MASTER
         token: $KUBERNETES_TOKEN
         insecure-skip-tls-verify: true
